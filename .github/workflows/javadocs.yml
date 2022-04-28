@@ -19,7 +19,7 @@ jobs:
     - name: Make Gradlew Executable
       run: chmod +x gradlew
     - name: Build Javadocs with Gradle
-      uses: gradle/gradle-build-action@v1
+      uses: gradle/gradle-build-action@v2
       with:
         arguments: javadoc
     - name: Publish to Github Pages
