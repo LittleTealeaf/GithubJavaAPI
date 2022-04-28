@@ -36,7 +36,7 @@ jobs:
     - name: Make Gradlew Executable
       run: chmox +x gradle
     - name: Build with Gradle
-      uses: gradle/gradle-build-action
+      uses: gradle/gradle-build-action@v1
       with:
         arguments: ${{matrix.gradlescript}}
 
