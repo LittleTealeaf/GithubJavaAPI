@@ -17,7 +17,7 @@ jobs:
         distribution: 'temurin'
         cache: 'gradle'
     - name: Make Gradlew Executable
-      run: chmox +x gradlew
+      run: chmod +x gradlew
     - name: Build Javadocs with Gradle
       uses: gradle/gradle-build-action@v1
       with:
