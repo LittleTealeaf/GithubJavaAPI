@@ -36,7 +36,7 @@ jobs:
     - name: Make Gradlew Executable
       run: chmod +x gradlew
     - name: Build with Gradle
-      uses: gradle/gradle-build-action@v1
+      uses: gradle/gradle-build-action@v2
       with:
         arguments: ${{matrix.gradlescript}}
 
